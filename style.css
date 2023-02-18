@@ -1,3 +1,6 @@
+*{
+    font-family: 'Roboto',Arial,sans-serif;
+}
 .menu_img{
     display: none;
     width: 45px;
@@ -9,9 +12,11 @@
     cursor: pointer;
 }
 .menu{
+    width: 100%;
     margin-left: 20px;
     display: inline-flex;
     text-align: center;
+    border-bottom: 1px solid #ecf2fd;
 }
 
 .logo_img{
@@ -71,6 +76,23 @@
     border: 2px solid #3576ed;
     color: #3576ed;
 }
+
+.section1_content_div{
+    margin-left: 50px;
+}
+
+.s1_h1{
+    font-size: 60px;
+    line-height: 30px;
+}
+
+.s1_p{
+    font-family: 'Roboto',Arial,sans-serif;
+    font-size: 16px;
+}
+
+
+
 
 
 @media only screen and (max-width: 1200px) {
