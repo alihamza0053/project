@@ -1,10 +1,68 @@
 <html>
     <head>
+        <link rel="stylesheet" href="style.css">
         <title>
-            Project
+            Visually
         </title>
         <body>
-            Hello World!
+           <div class="menu">
+            <img src="./images/logo.png" class="logo_img">
+            <ul>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <a href="#">Solutions</a>
+                </li>
+                <li>
+                    <a href="#">Resources</a>
+                </li>
+                <li>
+                    <a href="#">How it works</a>
+                </li>
+            </ul>
+            <div class="btn_div">
+                <button class="login_btn">Login</button>
+                <button class="qoute_btn">Get a Qoute</button>
+            </div>
+           </div>
+
+           <div class="mobile_menu" id="menu">
+            <ul>
+                <li>
+                    <a href="#">Products</a>
+                </li>
+                <li>
+                    <a href="#">Solutions</a>
+                </li>
+                <li>
+                    <a href="#">Resources</a>
+                </li>
+                <li>
+                    <a href="#">How it works</a>
+                </li>
+            </ul>
+           </div>
+           <img src="./images/menu.png" class="menu_img" onclick="menu()" id="menu_img">
+           
+           <script>
+            document.getElementById("menu").style.display="none";
+            var x=0;
+                function menu(){ 
+                    if(x==0){
+                        x++;
+                        document.getElementById("menu_img").src="./images/close.png";
+                        document.getElementById("menu").style.display="block";
+                    }
+                    else{
+                        document.getElementById("menu_img").src="./images/menu.png"
+                        document.getElementById("menu").style.display="none";
+                        x--;
+                    }
+
+                }
+                
+           </script>
         </body>
     </head>
 
